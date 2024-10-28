@@ -1,0 +1,27 @@
+[
+    {
+        "question": "What is the capital of France?",
+        "options": ["Paris", "Berlin", "Rome", "Madrid"],
+        "answer": "Paris"
+    },
+    {
+        "question": "Who wrote 'To Kill a Mockingbird'?",
+        "options": ["Harper Lee", "F. Scott Fitzgerald", "Mark Twain", "Ernest Hemingway"],
+        "answer": "Harper Lee"
+    },
+    {
+        "question": "What is the smallest planet in our solar system?",
+        "options": ["Mercury", "Venus", "Mars", "Pluto"],
+        "answer": "Mercury"
+    },
+    {
+        "question": "Which element has the chemical symbol 'O'?",
+        "options": ["Oxygen", "Gold", "Osmium", "Oganesson"],
+        "answer": "Oxygen"
+    },
+    {
+        "question": "In which year did World War II end?",
+        "options": ["1945", "1939", "1941", "1947"],
+        "answer": "1945"
+    }
+]

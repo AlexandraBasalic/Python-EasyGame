@@ -32,11 +32,8 @@ A simple yet engaging quiz game built with Pygame. It displays questions with mu
 ## License
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-
-<img width="637" alt="image" src="https://github.com/user-attachments/assets/ea4edffe-00f6-4924-b1a6-0652ffbd8f94">
-<img width="524" alt="image" src="https://github.com/user-attachments/assets/8ba62e06-4f6a-4d15-9e9a-bd6719920e99">
-<img width="505" alt="image" src="https://github.com/user-attachments/assets/0e63f747-854b-4f99-bd5b-3ed337a5f137">
-
+## Photos
+<img width="605" alt="image" src="https://github.com/user-attachments/assets/e234915f-e155-4a82-91ed-10a620311bbc">
 
 
 

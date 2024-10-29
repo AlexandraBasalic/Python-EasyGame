@@ -21,9 +21,14 @@ def draw_text(screen, text, font, color, x, y, center=False):
 def ask_question(screen, question, font, font_path, watermark_image):
     screen.fill((245, 222, 179))  # Light beige background color
 
-    # Draw watermark image
-    watermark_rect = watermark_image.get_rect(center=(400, 500))
-    screen.blit(watermark_image, watermark_rect)
+    # Create a semi-transparent watermark
+    watermark = watermark_image.copy()
+    watermark.fill((255, 255, 255, 128), None, pygame.BLEND_RGBA_MULT)  # 50% opacity
+
+    # Scale and center the watermark image
+    scaled_watermark = pygame.transform.scale(watermark, (watermark.get_width() // 4, watermark.get_height() // 4))
+    watermark_rect = scaled_watermark.get_rect(center=(400, 500))
+    screen.blit(scaled_watermark, watermark_rect)
 
     # Shuffle the options
     options = question['options']
@@ -39,9 +44,14 @@ def ask_question(screen, question, font, font_path, watermark_image):
 def show_feedback(screen, font, message, watermark_image):
     screen.fill((245, 222, 179))  # Light beige background color
 
-    # Draw watermark image
-    watermark_rect = watermark_image.get_rect(center=(400, 500))
-    screen.blit(watermark_image, watermark_rect)
+    # Create a semi-transparent watermark
+    watermark = watermark_image.copy()
+    watermark.fill((255, 255, 255, 128), None, pygame.BLEND_RGBA_MULT)  # 50% opacity
+
+    # Scale and center the watermark image
+    scaled_watermark = pygame.transform.scale(watermark, (watermark.get_width() // 4, watermark.get_height() // 4))
+    watermark_rect = scaled_watermark.get_rect(center=(400, 500))
+    screen.blit(scaled_watermark, watermark_rect)
 
     draw_text(screen, message, font, (101, 67, 33), 400, 300, center=True)  # Dark brown text color
     pygame.display.flip()
